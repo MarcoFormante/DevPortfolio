@@ -1,0 +1,98 @@
+.bg-grd__primary, .btn-cta {
+  background: linear-gradient(135deg, hsl(217, 91%, 60%), rgb(151, 103, 228));
+}
+
+.text-c-black, .btn-cta {
+  color: #0D1016;
+}
+
+.text-c-white {
+  color: #F8FAFC;
+}
+
+#header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-gradient, #header-title {
+  background: linear-gradient(135deg, hsl(263, 70%, 65%), hsl(217, 91%, 60%));
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+nav li:not(#header-btn-cta) {
+  transition: color 0.3s ease;
+}
+nav li:not(#header-btn-cta):hover {
+  color: #9767e4;
+}
+
+#header-btn-cta {
+  transition: scale 0.5s ease;
+}
+#header-btn-cta:hover {
+  scale: 1.1;
+}
+
+.btn-cta {
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#hero {
+  background-image: url("../assets/images/hero-bg-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#hero-bg-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 15, 28, 0.913);
+  z-index: 0;
+}
+
+#hero-scroll-icon {
+  animation: move-up-down 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.hero-btn {
+  transition: transform 0.5s ease;
+}
+.hero-btn #hero-btn__moving {
+  transition: all 0.5s ease;
+}
+.hero-btn:hover {
+  transform: scale(1.1);
+}
+.hero-btn:hover #hero-btn__moving {
+  transform: translateY(3px);
+}
+
+.hero-sn-icon {
+  transition: all 0.3s ease;
+}
+.hero-sn-icon:hover {
+  animation: lighting-icon 0.3s ease;
+  transform: scale(1.2);
+}
+
+@keyframes lighting-icon {
+  from {
+    background-color: rgba(255, 255, 255, 0.213);
+  }
+}
+@keyframes move-up-down {
+  50% {
+    transform: translateY(-20px);
+  }
+}/*# sourceMappingURL=main.css.map */
