@@ -14,7 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "ES6",
+  "type":"commonjs",
   "bugs": {
     "url": "https://github.com/MarcoFormante/DevPortfolio/issues"
   },
