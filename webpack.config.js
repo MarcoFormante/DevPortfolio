@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { watch } = require('fs');
 
 module.exports = {
     mode: "development",
@@ -9,6 +10,7 @@ module.exports = {
      experiments: {
         outputModule: true,
     },
+    watch:true,
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
