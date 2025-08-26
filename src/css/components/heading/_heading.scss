@@ -1,0 +1,13 @@
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: bold;
+    @extend .text-c-white;
+
+    span{
+        background-clip: text;
+        color: transparent;
+        @extend .text-gradient;
+    }
+}

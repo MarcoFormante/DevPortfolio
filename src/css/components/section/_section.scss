@@ -1,0 +1,24 @@
+.section{
+    
+    @extend .bg-section-gray;
+    padding: 5rem;
+
+    &-container{
+        padding: 0 1.5rem;
+    }
+}
+
+.section-title-container{
+    margin-bottom: 4rem;
+
+    h2{
+        @extend .section-title;
+        margin-bottom: 1.5rem;
+    }
+
+    p{
+        @extend .text-c-grey;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}

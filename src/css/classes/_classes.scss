@@ -1,0 +1,39 @@
+.bg-grd__primary{
+    background: linear-gradient(135deg, hsl(217 91% 60%), rgb(151, 103, 228));
+}
+
+
+.bg-section-gray{
+    background-color: #13161C;
+}
+
+
+.bg-section-black{
+    background-color: $black;
+}
+
+.text-primary{
+    color: $primary;
+}
+
+
+.text-c-black{
+    color: $black;
+}
+
+
+.text-c-white{
+    color: $white;
+}
+
+.text-c-grey{
+    color:$grey;
+}
+
+.text-c-blue{
+    color: $blue;
+}
+
+.border-c-grey{
+    color: #2b303b80;
+}
