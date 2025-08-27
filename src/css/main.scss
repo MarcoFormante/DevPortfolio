@@ -55,6 +55,21 @@
     
 }
 
+.section{
+    @media screen and (min-width: 769px) {
+        opacity: 0;
+        animation: show-img  ease forwards;
+        animation-timeline: view(95% -95%);
+    }
+}
+
+@keyframes show-img {
+    100%{
+        opacity: 1;
+    }
+}
+
+
 
 @keyframes lighting-icon {
     from{
