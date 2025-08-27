@@ -1,0 +1,67 @@
+.project{
+    max-width: 35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid $border-c-grey;
+    padding: 20px 16px;
+    border-radius: 0.75rem;
+    background-color: $black;
+    
+    &-title{
+        font-size: 20px;
+    }
+
+    &-stacks-list{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        li{
+            padding: 6px 16px;
+            background-color: lighten($black,8%);
+            border-radius: 9999px;
+        }
+    }
+
+    &-links{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 8px;
+        a{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid $border-c-grey;
+            
+            &.project-links-git{
+                @extend .btn-cta;
+                width: fit-content;
+                padding: 8px 14px;
+                background: transparent;
+                border: 1px solid $border-c-grey;
+                color: $white;
+                transition: all 0.5s ease;
+                font-weight: bold;
+                &:hover{
+                    background: darken($blue,3%);
+                }
+            }
+
+            &.project-links-cta{
+               @extend .btn-cta;
+               width: fit-content;
+               padding: 8px 14px;
+               transition: transform 0.5s ease;
+               color: $black;
+               font-weight: bold;
+               &:hover{
+                    transform: scale(1.05);
+               }
+            }
+        }
+    }
+    
+   
+}
