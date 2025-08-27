@@ -1,0 +1,59 @@
+.skill-box{
+    width: 360px;
+    max-width: 360px;
+    @extend .border-c-grey;
+    border: 1px solid;
+    padding: 32px 24px 24px 24px;
+    border-radius: 0.75rem;
+    height: 384px;
+    background-color: #14181f80;
+    padding: 24px;
+
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+        @extend .text-c-white;
+        text-align: center;
+    }
+
+    &-lang-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-skill-name{
+        @extend .text-c-white;
+        font-weight: 500;
+    }
+
+    &-text-value{
+        @extend .text-c-grey;
+        font-size: 0.875rem;
+    }
+
+    &-value-container{
+        width: 100%;
+        height: 8px;
+        background-color: rgb(38, 38, 38);
+        border-radius: 9999px;
+    }
+
+    
+    &-value{
+        width:0%;
+        height: 100%;
+        background:linear-gradient(135deg,rgb(151, 103, 228), hsl(217 91% 60%));
+        border-radius: 9999px;
+    }
+
+    &-fadeIn .skill-box-value{
+        animation: skill-box-value-animation 0.5s cubic-bezier(.68,.99,.72,.07)   forwards;
+    }
+}
+
+@keyframes skill-box-value-animation  {
+    100%{
+        width: attr(data-value %);
+    }
+}

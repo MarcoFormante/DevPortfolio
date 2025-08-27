@@ -10,16 +10,28 @@
   background-color: #0D1016;
 }
 
+.text-primary, nav li:not(#header-btn-cta):hover {
+  color: #9767e4;
+}
+
 .text-c-black, .btn-cta {
   color: #0D1016;
 }
 
-.text-c-white, .section-title, .section-title-container h2 {
+.text-c-white, .skill-box-skill-name, .skill-box h3, .section-title, .section-title-container h2 {
   color: #F8FAFC;
 }
 
-.text-c-grey, .section-title-container p {
+.text-c-grey, .skill-box-text-value, .section-title-container p {
   color: #95a3b7;
+}
+
+.text-c-blue {
+  color: #3c83f6;
+}
+
+.border-c-grey, .skill-box {
+  color: rgba(43, 48, 59, 0.5019607843);
 }
 
 #header-title {
@@ -37,10 +49,6 @@
 nav li:not(#header-btn-cta) {
   transition: color 0.3s ease;
 }
-nav li:not(#header-btn-cta):hover {
-  color: #9767e4;
-}
-
 #header-btn-cta {
   transition: scale 0.5s ease;
 }
@@ -69,7 +77,6 @@ nav li:not(#header-btn-cta):hover {
 }
 
 .section {
-  min-height: 100vh;
   padding: 5rem;
 }
 .section-container {
@@ -87,6 +94,53 @@ nav li:not(#header-btn-cta):hover {
   text-align: center;
 }
 
+.skill-box {
+  width: 360px;
+  max-width: 360px;
+  border: 1px solid;
+  padding: 32px 24px 24px 24px;
+  border-radius: 0.75rem;
+  height: 384px;
+  background-color: rgba(20, 24, 31, 0.5019607843);
+  padding: 24px;
+}
+.skill-box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.skill-box-lang-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-box-skill-name {
+  font-weight: 500;
+}
+.skill-box-text-value {
+  font-size: 0.875rem;
+}
+.skill-box-value-container {
+  width: 100%;
+  height: 8px;
+  background-color: rgb(38, 38, 38);
+  border-radius: 9999px;
+}
+.skill-box-value {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(135deg, rgb(151, 103, 228), hsl(217, 91%, 60%));
+  border-radius: 9999px;
+}
+.skill-box-fadeIn .skill-box-value {
+  animation: skill-box-value-animation 0.5s cubic-bezier(0.68, 0.99, 0.72, 0.07) forwards;
+}
+
+@keyframes skill-box-value-animation {
+  100% {
+    width: attr(data-value %);
+  }
+}
 #hero {
   background-image: url("../assets/images/hero-bg-cover.jpg");
   background-repeat: no-repeat;

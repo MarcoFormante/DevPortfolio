@@ -8,13 +8,13 @@
  */
 /******/ var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
 /***/ (() => {
 
-eval("{\n\n//# sourceURL=webpack://devportfolio/./src/index.js?\n}");
+eval("{var skillBoxes = document.querySelectorAll(\".skill-box\");\nvar observer = new IntersectionObserver(function (entries) {\n  entries.forEach(function (entry) {\n    if (entry.isIntersecting) {\n      entry.target.classList.add(\"skill-box-fadeIn\");\n      observer.unobserve(entry.target);\n    }\n  });\n});\nskillBoxes.forEach(function (box) {\n  observer.observe(box);\n});\n\n//# sourceURL=webpack://devportfolio/./src/main.js?\n}");
 
 /***/ })
 
@@ -25,5 +25,5 @@ eval("{\n\n//# sourceURL=webpack://devportfolio/./src/index.js?\n}");
 /******/ // Load entry module and return exports
 /******/ // This entry module can't be inlined because the eval devtool is used.
 /******/ var __webpack_exports__ = {};
-/******/ __webpack_modules__["./src/index.js"]();
+/******/ __webpack_modules__["./src/main.js"]();
 /******/ 

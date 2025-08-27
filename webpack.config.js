@@ -6,7 +6,7 @@ const { watch } = require('fs');
 
 module.exports = {
     mode: "development",
-    entry: "./src/index.js",
+    entry: "./src/main.js",
      experiments: {
         outputModule: true,
     },
