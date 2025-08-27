@@ -47,7 +47,7 @@
         border-radius: 9999px;
     }
 
-    &-fadeIn .skill-box-value{
+    &-inViewport .skill-box-value{
         animation: skill-box-value-animation 0.5s cubic-bezier(.68,.99,.72,.07)   forwards;
     }
 }

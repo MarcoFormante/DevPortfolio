@@ -3,7 +3,7 @@ const skillBoxes = document.querySelectorAll(".skill-box")
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add("skill-box-fadeIn")
+            entry.target.classList.add("skill-box-inViewport")
             observer.unobserve(entry.target)
         }
     })
