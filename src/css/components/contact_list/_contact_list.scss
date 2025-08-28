@@ -1,0 +1,26 @@
+#contact-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+    color: white;
+   
+
+    li{
+        border: 2px solid $border-c-grey;
+        flex: 1 0 150px;
+        min-height: 150px;
+        min-width: 280px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        border-radius: 0.65rem;
+
+        p{
+            color: $grey;
+        }
+     }
+}  
